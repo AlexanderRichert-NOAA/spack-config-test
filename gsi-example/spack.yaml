@@ -1,8 +1,8 @@
 spack:
   include:
   # Set $SITE, $COMPILER, and optionally $USE_SPACK_STACK_VERSIONS=YES
-  - path: https://raw.githubusercontent.com/AlexanderRichert-NOAA/spack-config-test/refs/heads/main/common.yaml
-    sha256: 0659af04fe07cac3462bf0e80b00929b5ea4009c3bc29d2b034b24becb25d12f
+  - path: https://raw.githubusercontent.com/AlexanderRichert-NOAA/spack-config-test/4a03d5f6632f68db2b1f6e73af948ac0458623ea/common.yaml
+    sha256: 1d8adf9a90fde852ae65cd1175895db24d6ca9ec97ef01088df84c61bbf25072
   specs:
   - netcdf-c
   - netcdf-fortran
