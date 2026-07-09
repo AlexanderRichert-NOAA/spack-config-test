@@ -1,0 +1,22 @@
+spack:
+  include:
+  # Set $SITE, $COMPILER, and optionally $USE_SPACK_STACK_VERSIONS=YES
+  - path: https://raw.githubusercontent.com/AlexanderRichert-NOAA/spack-config-test/refs/heads/main/common.yaml
+    sha256: 0659af04fe07cac3462bf0e80b00929b5ea4009c3bc29d2b034b24becb25d12f
+  specs:
+  - netcdf-c
+  - netcdf-fortran
+  - bufr
+  - bacio
+  - w3emc
+  - ip
+  - sigio
+  - sfcio
+  - nemsio
+  - wrf-io
+  - ncio
+  - crtm
+  - gsi-ncdiag
+  view: true
+  concretizer:
+    unify: true
