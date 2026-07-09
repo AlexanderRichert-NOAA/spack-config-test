@@ -31,7 +31,7 @@ export USE_SPACK_STACK_VERSIONS=YES
 | `SITE` | `acorn`, `ursa` | Selects which spack-stack site to get configurations for. |
 | `COMPILER` | `intel@19.1.3.304`, `oneapi@2024.2.1`, `oneapi@2025.3.1` | Selects compiler-specific include files for matching site rules. |
 
-Default behavior for all is to not match the relevant include's.
+Default behavior for all variables is to not match the relevant include's.
 
 ### Rule summary
 
