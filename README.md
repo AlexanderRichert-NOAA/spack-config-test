@@ -33,7 +33,9 @@ export USE_SPACK_STACK_VERSIONS=YES
 
 Default behavior for all is to not match the relevant include's.
 
-## Rule summary
+### Rule summary
+
+Here are some example variable configurations and their effects on included files:
 
 | $SITE | $COMPILER | $USE_SPACK_STACK_VERSIONS | **Included config files from spack-stack** |
 |---|---|---|---|
