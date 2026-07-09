@@ -6,7 +6,7 @@ include:
 # Acorn
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/sites/tier1/acorn/packages.yaml
   sha256: d5260c08a7a5a2edc0097145cc7938765ec09ba06aee0eabf6beef075d217404
-  when: env.get("SITE") == "acorn" and env.get("USE_SPACK_STACK_VERS") == "YES"
+  when: env.get("SITE") == "acorn" and env.get("USE_SPACK_STACK_VERSIONS") == "YES"
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/sites/tier1/acorn/packages_intel-19.1.3.304.yaml
   sha256: a085865ddd2791c7e77b0d53f0811e7db5d260994720228e8fc851e049e57cb2
   when: env.get("SITE") == "acorn" and env.get("COMPILER") == "intel@19.1.3.304"
@@ -17,7 +17,7 @@ include:
 # Ursa
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/sites/tier1/ursa/packages.yaml
   sha256: eb79e5831f10e94b96ff1cd7bdfb1f0d396bc1fea33a94b5fda637fbcb6cfb56
-  when: env.get("SITE") == "ursa" and env.get("USE_SPACK_STACK_VERS") == "YES"
+  when: env.get("SITE") == "ursa" and env.get("USE_SPACK_STACK_VERSIONS") == "YES"
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a0/configs/sites/tier1/ursa/packages_oneapi-2025.2.1-hpcx.yaml
   sha256: 230483c2ac830dc782bc6c537d6b573fe04abaee18d2605f306d6290c1663e3f
   when: env.get("SITE") == "ursa" and env.get("COMPILER") == "oneapi@2025.3.1"
