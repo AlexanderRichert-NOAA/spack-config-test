@@ -1,5 +1,8 @@
 ### General spack-stack configs (incl. compiler-specific)
 include:
+- path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/common/config.yaml
+  sha256: fd0ca5310815e76ebd3ca8fe04ff9a7d501516fa401554df80673c6949050725
+  when: env.get("USE_SPACK_STACK_CONFIG") == "YES"
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/common/packages.yaml
   sha256: 9d3584d9c6ccc17d63a11ea9960d1f325c020d718b309846dbb0d2abe4e78ee9
   when: env.get("USE_SPACK_STACK_VERSIONS") == "YES"
