@@ -1,0 +1,4 @@
+[submodule "ufs-weather-model"]
+	path = ufs-weather-model
+	url = https://github.com/AlexanderRichert-NOAA/ufs-weather-model
+	branch = spackyaml
