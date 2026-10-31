@@ -8,10 +8,10 @@ include:
   when: env.get("USE_SPACK_STACK_VERSIONS") == "YES"
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/common/packages_oneapi.yaml
   sha256: e970eb3d52f970bbd82923ba90aecbe928b32e7c017971e627f92867eee2512f
-  when: (re.sub("@.+", "", env.get("COMPILER") or "unset") == "oneapi")
+  when: (re.sub("@.+", "", env.get("COMPILER") or "unset") == "oneapi") and (env.get("USE_SPACK_STACK_VERSIONS") == "YES")
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a/configs/common/packages_gcc.yaml
   sha256: 3da0d5e272afd788b598bc8dd1b48e14628a9966e70466f4e8b058ed885df4e2
-  when: (re.sub("@.+", "", env.get("COMPILER") or "unset") == "gcc")
+  when: (re.sub("@.+", "", env.get("COMPILER") or "unset") == "gcc") and (env.get("USE_SPACK_STACK_VERSIONS") == "YES")
 
 ### Site configs
 
