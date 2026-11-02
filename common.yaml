@@ -28,8 +28,8 @@ include:
 
 # Ursa
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a0/configs/sites/tier1/ursa/packages.yaml
-  sha256: 7d447d2d3bb1a717257a6fcaf5fec379e91309a3d6a0d35dd8b2caf3125eb48e
+  sha256: eb79e5831f10e94b96ff1cd7bdfb1f0d396bc1fea33a94b5fda637fbcb6cfb56
   when: env.get("SITE") == "ursa"
 - path: https://github.com/AlexanderRichert-NOAA/spack-config-test/blob/d7a1add26770616512eb1133c5bd61b66af29779/sites/ursa/packages_oneapi-2025.2.1-hpcx.yaml
-  sha256: 436d77edc069a01244b48dc1fd4bd5bf22a098e30f71ffdaed47e8f9a525ba58
+  sha256: 94110cd663225d9bdd13dfc16e6c040242137b9d2f41707e527b40aa63b43a22
   when: env.get("SITE") == "ursa" and env.get("COMPILER") == "oneapi@2025.2.1"
