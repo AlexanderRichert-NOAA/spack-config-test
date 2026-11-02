@@ -32,4 +32,4 @@ include:
   when: env.get("SITE") == "ursa"
 - path: https://raw.githubusercontent.com/JCSDA/spack-stack/df06c2b4ef21f717ab018b75bd68441cd75bf4a0/configs/sites/tier1/ursa/packages_oneapi-2025.2.1-hpcx.yaml
   sha256: 230483c2ac830dc782bc6c537d6b573fe04abaee18d2605f306d6290c1663e3f
-  when: env.get("SITE") == "ursa" and env.get("COMPILER") == "oneapi@2025.3.1"
+  when: env.get("SITE") == "ursa" and env.get("COMPILER") == "oneapi@2025.2.1"
